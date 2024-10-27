@@ -62,6 +62,19 @@ This dataset can be utilized for various analyses, including but not limited to:
 - Savings potential estimation
 - Demographic impact on financial habits
 
+```python
+plt.figure(figsize = (15, 35))
+for i, col in enumerate(df.columns, 1):
+    plt.subplot(7, 4, i)
+    sns.histplot(x = df[col])
+    plt.title(f"Histogram of {col} Data")
+    plt.plot()
+
+```
+
+
+![Histplot](https://github.com/Arif-miad/Indian-Personal-Finance-and-Spending-Habits/blob/main/indian.png)
+
 
 
 ## License
